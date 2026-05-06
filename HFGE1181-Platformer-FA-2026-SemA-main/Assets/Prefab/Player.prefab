@@ -100,8 +100,8 @@ MonoBehaviour:
   invulnerableDuration: 2
   blinkInterval: 0.1
   state: 0
-  hearts: 3
-  maxHearts: 3
+  hearts: 6
+  maxHearts: 6
 --- !u!70 &5657980376360440586
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
