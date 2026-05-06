@@ -34,7 +34,7 @@ public class HealthManager : MonoBehaviour
 
     public void CheckHealth()
     {
-        if (healthSystem.GetHearts() < 0)
+        if (healthSystem.GetHearts() <= 0)
         {
             SceneManager.LoadScene(sceneName);
         }

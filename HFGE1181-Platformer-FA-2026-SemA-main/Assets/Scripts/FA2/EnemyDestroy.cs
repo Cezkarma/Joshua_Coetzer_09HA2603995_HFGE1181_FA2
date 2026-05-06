@@ -8,7 +8,6 @@ public class EnemyDestroy : MonoBehaviour
     {
         if (trig.gameObject.tag == "Player")
         {
-            Debug.Log("Ouch!");
             Destroy(parentObject);
         }
     }

@@ -18,7 +18,6 @@ public class HealthSystem : MonoBehaviour
 
     private void Start()
     {
-        spriteRenderer = GetComponent<SpriteRenderer>();
         UIManager.Instance.InitializeHealthUI(this);
     }
 
@@ -35,6 +34,10 @@ public class HealthSystem : MonoBehaviour
             state = PlayerState.invulnerable;
             StopAllCoroutines();
             StartCoroutine(Invulnerable());
+
+            Debug.Log("hearts :: " + hearts);
+            if (hearts == 0) { Debug.Log("ded"); }
+
             UIManager.Instance.HandleHealthVisual(this);
         }
         else 

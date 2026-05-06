@@ -64,6 +64,7 @@ public class UIManager : MonoBehaviour
     public void AddScore(int scoreValue)
     {
         playerScore += scoreValue;
+        Debug.Log(playerScore.ToString());//TODO: REMEMBER TO REMOVE (I will probably forget)
         scoreText.text = playerScore.ToString();
     }
 

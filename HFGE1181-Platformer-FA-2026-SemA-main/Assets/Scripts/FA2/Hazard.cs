@@ -5,6 +5,7 @@ public class Hazard : MonoBehaviour
     public int damage;
     public void OnCollisionEnter2D(Collision2D col)
     {
+        Debug.Log("hazard dmg :: " + damage);
         if (col.gameObject.tag == "Player")
         {
             if (CameraShake.Instance != null)
