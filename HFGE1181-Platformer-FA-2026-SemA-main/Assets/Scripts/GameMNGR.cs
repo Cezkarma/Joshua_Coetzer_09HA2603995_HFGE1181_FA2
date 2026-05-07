@@ -6,7 +6,7 @@ public class GameMNGR : MonoBehaviour
 {
     public static GameMNGR instance;
 
-    private bool hasKey = false;
+    private bool hasKey = true;
 
     [SerializeField] private GameObject loseScreen;
     [SerializeField] private GameObject winScreen;
