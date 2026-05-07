@@ -77,7 +77,7 @@ public class UIManager : MonoBehaviour
     public void InitializeHealthUI(HealthSystem healthSystem)
     {
         healthSystem = HealthManager.Instance.AccessHealthSystem();
-        
+
         if (healthSystem.GetHearts() != heartVisuals.Length)
         {
             Debug.Log("Your Hearts at the start of the game should match up to your visuals");

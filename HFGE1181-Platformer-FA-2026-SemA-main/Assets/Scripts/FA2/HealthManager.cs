@@ -9,13 +9,13 @@ public class HealthManager : MonoBehaviour
 
     private void Awake()
     {
-
         if (Instance != null)
         {
             Destroy(this);
         }
         else
         {
+            healthSystem = FindFirstObjectByType<UpdatedPlayerController>().GetComponent<HealthSystem>();
             Instance = this;
         }
     }
@@ -23,7 +23,6 @@ public class HealthManager : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        healthSystem = FindFirstObjectByType<UpdatedPlayerController>().GetComponent<HealthSystem>();
         sceneName = SceneManager.GetActiveScene().name;
     }
 
